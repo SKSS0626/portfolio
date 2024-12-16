@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f62eb42b9d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Certifications</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Student</p>
+            <h1>Hi, I'm <span>Karthik </span>Surya Sai<br>From India</h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Motivated computer science student with a strong foundation in Python, Java, and AI. Interested in applying problemsolving
+                   skills to develop innovative and practical solutions. Committed to building technical expertise and contributing
+                   effectively to team projects with a focus on meeting deadlines and ensuring quality</p>
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"  onclick="opentab('internship')">Internship</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming languages</span><br>Python, Java and C</li>
+                        <li><span>Web Developement</span><br>HTML, CSS and PHP</li>
+                        <li><span>Tools</span><br>Microsoft Power BI and Microsoft Office</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="internship">
+                    <ul>
+                        <li><span>December 2024 - Present</span><br>Long-term Internship at vidrutha solutions (AI/ML uning Python)</li>
+                        <li><span>March 2024 - June 2024</span><br>Virtual short-term Internship at Ulearn Edutech company (AI/ML)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - Present</span><br>Bsc computer science at Aditya Degree College</li>
+                        <li><span>2020 - 2022</span><br>Intermidiate education (MPC) at Aditya Junior College</li>
+                        <li><span>2019 - 2020</span><br>Secoundary school education at Aditya EM High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Certifications</h1>
+        <div class="services-list">
+            <div>
+                <h2>C certification</h2>
+                <p>Achived a “C” certification from the platform “Cisco Network Academy”</p>
+                <a href="#" onclick="showImage('c.jpg')">Click to view certificate</a>
+            </div>
+            <div>
+                <h2>Python for Beginners</h2>
+                <p>Accomplished a “Python Of Beginners” certification from the platform “Infosys Springboard”</p>
+                <a href="#" onclick="showImage('Basics of python.png')">Click to view certificate</a>
+            </div>
+            <div>
+                <h2>Java Foundations</h2>
+                <p>Completed a “Java Foundations” certification from the platform "Oracle Academy"</p>
+                <a href="#" onclick="showImage('Java Foundations.jpg')">Click to view certificate</a>
+            </div>
+            <div>
+                <h2>Artificial Intelligence Fundamentals</h2>
+                <p>Secured a certificate from “IBM Skill Build” for the completion of “Artificial Intelligence Fundamentals” certification</p>
+                <a href="#" onclick="showImage('ArtificialIntelligenceFundatels.jpg')">Click to view certificate</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="image-modal" class="image-modal">
+    <span class="close" onclick="closeImage()">×</span>
+    <img id="modal-image" src="" alt="Service Image">
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>QuakeGuard: AI Earthquake Detection</h3>
+                    <p>Developed a prototype for “QuakeGuard,” an AI-powered earthquake detection system that enhanced early
+                        warning accuracy by 15%. Incorporated multi-depth seismic sensors and advanced AI algorithms, optimizing
+                        communication strategies to ensure timely alerts to authorities and communities.</p>
+                        <a href="https://drive.google.com/uc?export=download&id=13PNaju6n5fgQZq2CQmb3Cjm7Mpv1jlC3" download><i class="fa-solid fa-download"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Superstore Profit Analysis Dashboard</h3>
+                    <p>Developed a Power BI dashboard to simplify the analysis of sales trends by category, region, and year. Enabled
+                        users to easily filter data by city and visualize key insights through interactive charts and maps, improving
+                        decision-making efficiency</p>
+                    <a href="https://drive.google.com/uc?export=download&id=1bbKONrOy8KT_zga0g3fx_-2KIE3hsrrw" download><i class="fa-solid fa-download"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Personal Portfolio Website Using HTML, CSS, and JavaScript</h3>
+                    <p>Designed and developed a personal portfolio website serving as a virtual CV to showcase skills and achievements.
+                        Implemented using HTML, CSS, and JavaScript as a solo project.</p>
+                    <a href="https://skss0626.github.io/portfolio/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> skarthiksuryasai@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9347384296</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/skarthikss_9051/profilecard/?igsh=dDV1a21teDBrMnJ1" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://t.me/karthiksuryasai"><i class="fa-brands fa-telegram" target="_blank"></i></a>
+                    <a href="https://www.linkedin.com/in/skarthiksuryasai/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="https://drive.google.com/uc?export=download&id=1SuamANC5fpEYnEKV0iWf-CiXyZ_edJTa" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © [2024] Karthik Surya Sai. All Rights Reserved.</p>
+    </div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+    function showImage(imageSrc) {
+    const modal = document.getElementById("image-modal");
+    const modalImage = document.getElementById("modal-image");
+
+    // Set the image source
+    modalImage.src = imageSrc;
+
+    // Show the modal
+    modal.style.display = "flex";
+}
+
+function closeImage() {
+    const modal = document.getElementById("image-modal");
+
+    // Hide the modal
+    modal.style.display = "none";
+}
+
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwFf6gDZpeT9Wmsai5H5IKOlvyPIbU-Z3DFGXD8xz9TIzgFgdGgGI4KJYaekBg74Z7zcQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
